@@ -21,7 +21,7 @@ GigFlow is a production-style MERN SaaS dashboard for managing sales leads with 
 ## ☀️ Dashboard (Light Mode)
 
 <p align="center">
-  <img src="./assets/screenshots/dasboard_light.png width="100%" />
+  <img src="./assets/screenshots/dashboard_light.png" width="100%" />
 </p>
 
 ---

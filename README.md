@@ -6,6 +6,140 @@ GigFlow is a production-style MERN SaaS dashboard for managing sales leads with 
 
 `https://service-hive-gig-flow-frontend-a144.vercel.app`
 
+---
+
+# 📸 Application Screenshots
+
+## 🌑 Dashboard (Dark Mode)
+
+<p align="center">
+  <img src="./assets/screenshots/dashboard.png" width="100%" />
+</p>
+
+---
+
+## ☀️ Dashboard (Light Mode)
+
+<p align="center">
+  <img src="./assets/screenshots/dashboard_light.png" width="100%" />
+</p>
+
+---
+
+## 📋 Leads Management
+
+<p align="center">
+  <img src="./assets/screenshots/leads.png" width="100%" />
+</p>
+
+---
+
+## 👤 Lead Details
+
+<p align="center">
+  <img src="./assets/screenshots/lead details.png" width="100%" />
+</p>
+
+---
+
+## ➕ Create New Lead
+
+<p align="center">
+  <img src="./assets/screenshots/new lead.png" width="100%" />
+</p>
+
+---
+
+## ✏️ Update Lead
+
+<p align="center">
+  <img src="./assets/screenshots/update lead.png" width="100%" />
+</p>
+
+---
+
+## 🔐 Authentication Page
+
+<p align="center">
+  <img src="./assets/screenshots/login.png" width="100%" />
+</p>
+
+---
+
+# 📱 Mobile Responsive Views
+
+## 📱 Mobile Dashboard (Dark)
+
+<p align="center">
+  <img src="./assets/screenshots/mobile dashboard.jpeg" width="35%" />
+</p>
+
+---
+
+## 📱 Mobile Dashboard (Light)
+
+<p align="center">
+  <img src="./assets/screenshots/mobile dashboard light.jpeg" width="35%" />
+</p>
+
+---
+
+## 📱 Mobile Leads
+
+<p align="center">
+  <img src="./assets/screenshots/mobile leads.jpeg" width="35%" />
+</p>
+
+---
+
+## 📱 Mobile Login
+
+<p align="center">
+  <img src="./assets/screenshots/mobile login.jpeg" width="35%" />
+</p>
+
+---
+
+## 📱 Mobile Create Lead (Dark)
+
+<p align="center">
+  <img src="./assets/screenshots/mobile new lead.jpeg" width="35%" />
+</p>
+
+---
+
+## 📱 Mobile Create Lead (Light)
+
+<p align="center">
+  <img src="./assets/screenshots/mobile new lead light.jpeg" width="35%" />
+</p>
+
+---
+
+## 📱 Mobile Lead View (Light)
+
+<p align="center">
+  <img src="./assets/screenshots/mobile lead light.jpeg" width="35%" />
+</p>
+
+---
+
+## 📱 Mobile Profile
+
+<p align="center">
+  <img src="./assets/screenshots/mobile profile.jpeg" width="35%" />
+</p>
+
+---
+
+## 👨‍💼 Admin Profile
+
+<p align="center">
+  <img src="./assets/screenshots/admin profile.png" width="100%" />
+</p>
+
+---
+
 ## Overview
 
 GigFlow is built to feel like a startup-grade internal sales dashboard. It includes:

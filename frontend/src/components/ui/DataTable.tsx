@@ -14,8 +14,8 @@ export const DataTable = <T,>({ columns, rows }: DataTableProps<T>): JSX.Element
   return (
     <div className="overflow-hidden rounded-3xl border shadow-soft" style={{ backgroundColor: "var(--surface)", borderColor: "var(--border)" }}>
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y" style={{ divideColor: "var(--border)" }}>
-          <thead style={{ backgroundColor: "var(--surface-strong)" }}>
+        <table className="min-w-full divide-y divide-[color:var(--border)]">
+          <thead className="bg-[color:var(--surface-strong)]">
             <tr>
               {columns.map((column) => (
                 <th key={column.header} className="px-5 py-4 text-left text-xs font-semibold uppercase tracking-[0.2em]" style={{ color: "var(--muted)" }}>
@@ -24,7 +24,7 @@ export const DataTable = <T,>({ columns, rows }: DataTableProps<T>): JSX.Element
               ))}
             </tr>
           </thead>
-          <tbody className="divide-y" style={{ divideColor: "var(--border)" }}>
+          <tbody className="divide-y divide-[color:var(--border)]">
             {rows.map((row, index) => (
               <tr key={index} className="transition hover:bg-black/5 dark:hover:bg-white/5">
                 {columns.map((column) => (

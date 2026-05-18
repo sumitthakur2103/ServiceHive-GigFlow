@@ -18,10 +18,25 @@ import { toast } from "sonner";
 import type { Lead } from "../../types/lead";
 import { leadService } from "../../services/leadService";
 import { LEAD_SOURCES, LEAD_STATUSES } from "../../constants/leads";
+import type { LeadSource, LeadStatus } from "../../constants/leads";
 
 export default function LeadsPage(): JSX.Element {
   const role = useAuthStore((state) => state.user?.role ?? null);
-  const [filters, setFilters] = useState({ status: "", source: "", search: "", sort: "latest", page: 1, limit: 10 });
+  const [filters, setFilters] = useState<{
+    status: "" | LeadStatus;
+    source: "" | LeadSource;
+    search: string;
+    sort: "latest" | "oldest";
+    page: number;
+    limit: number;
+  }>({
+    status: "",
+    source: "",
+    search: "",
+    sort: "latest",
+    page: 1,
+    limit: 10
+  });
   const debouncedSearch = useDebounce(filters.search, 350);
   const [isPending, startTransition] = useTransition();
   const { deleteMutation } = useLeadMutations();
@@ -31,9 +46,9 @@ export default function LeadsPage(): JSX.Element {
       status: filters.status || undefined,
       source: filters.source || undefined,
       search: debouncedSearch || undefined,
-      sort: filters.sort as "latest" | "oldest",
+      sort: filters.sort,
       page: filters.page,
-      limit: 10
+      limit: filters.limit
     }),
     [filters, debouncedSearch]
   );

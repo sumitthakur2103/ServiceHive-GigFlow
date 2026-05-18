@@ -160,7 +160,16 @@ export default function LeadsPage(): JSX.Element {
               placeholder="Search name or email"
             />
           </div>
-          <Select value={filters.status} onChange={(e) => setFilters((prev) => ({ ...prev, status: e.target.value, page: 1 }))}>
+          <Select
+            value={filters.status}
+            onChange={(e) =>
+              setFilters((prev) => ({
+                ...prev,
+                status: e.target.value === "" ? "" : (e.target.value as LeadStatus),
+                page: 1
+              }))
+            }
+          >
             <option value="">All Statuses</option>
             {LEAD_STATUSES.map((status) => (
               <option key={status} value={status}>
@@ -168,7 +177,16 @@ export default function LeadsPage(): JSX.Element {
               </option>
             ))}
           </Select>
-          <Select value={filters.source} onChange={(e) => setFilters((prev) => ({ ...prev, source: e.target.value, page: 1 }))}>
+          <Select
+            value={filters.source}
+            onChange={(e) =>
+              setFilters((prev) => ({
+                ...prev,
+                source: e.target.value === "" ? "" : (e.target.value as LeadSource),
+                page: 1
+              }))
+            }
+          >
             <option value="">All Sources</option>
             {LEAD_SOURCES.map((source) => (
               <option key={source} value={source}>
@@ -176,7 +194,16 @@ export default function LeadsPage(): JSX.Element {
               </option>
             ))}
           </Select>
-          <Select value={filters.sort} onChange={(e) => setFilters((prev) => ({ ...prev, sort: e.target.value, page: 1 }))}>
+          <Select
+            value={filters.sort}
+            onChange={(e) =>
+              setFilters((prev) => ({
+                ...prev,
+                sort: e.target.value === "oldest" ? "oldest" : "latest",
+                page: 1
+              }))
+            }
+          >
             <option value="latest">Latest</option>
             <option value="oldest">Oldest</option>
           </Select>
